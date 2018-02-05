@@ -2,7 +2,11 @@ package repositories
 
 import models.Pet
 
+import scala.collection.mutable.ArrayBuffer
+
 class PetRepo {
+
+  private val _pets : ArrayBuffer[Pet] = new ArrayBuffer[Pet]()
 
   def all() : List[Pet] = Nil
   def findByName (name : String) : Option[Pet] = None
