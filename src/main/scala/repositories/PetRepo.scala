@@ -4,7 +4,7 @@ import models.Pet
 
 import scala.collection.mutable.ArrayBuffer
 
-class PetRepo {
+object PetRepo {
 
   private val _pets : ArrayBuffer[Pet] = new ArrayBuffer[Pet]()
 
